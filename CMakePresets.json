@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 20,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "ubuntu-x86_64",
+        "hidden": false,
+        "generator": "Unix Makefiles",
+        "binaryDir": "${sourceDir}/build/ubuntu-x86_64",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/toolchain-ubuntu-x86.cmake"
+        },
+        "environment": {
+          "CXX": "/usr/bin/g++",
+          "CC": "/usr/bin/gcc"
+        },
+        "description": "Preset for Ubuntu x86_64 with custom toolchain file."
+      }
+    ]
+  }
+  
